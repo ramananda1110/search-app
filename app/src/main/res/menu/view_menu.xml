@@ -4,7 +4,7 @@
         android:id="@+id/action_2"
         android:icon="@drawable/ic_no_data_found"
         android:orderInCategory="100"
-        android:title="Column 2"
+        android:title="@string/column_2"
         app:showAsAction="never" />
 
 
@@ -12,7 +12,7 @@
         android:id="@+id/action_3"
         android:icon="@drawable/ic_no_data_found"
         android:orderInCategory="100"
-        android:title="Column 3"
+        android:title="@string/column_3"
         app:showAsAction="never" />
 
 
@@ -20,7 +20,7 @@
         android:id="@+id/action_4"
         android:icon="@drawable/ic_no_data_found"
         android:orderInCategory="100"
-        android:title="Column 4"
+        android:title="@string/column_4"
         app:showAsAction="never" />
 
 

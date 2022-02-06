@@ -37,12 +37,4 @@ interface ApiService {
     ): Call<SearchDataResponse?>?
 
 
-    @Headers("Accept: application/json")
-    @GET("search/photos?")
-    suspend fun getSearchImage2(
-        clintId: String,
-        pageSize: Int,
-        maxSize: Int,
-        query: String
-    ): SearchDataResponse
 }

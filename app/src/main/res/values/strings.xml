@@ -6,4 +6,7 @@
 
     <string name="please_click_back_again_to_exit">Please click BACK again to exit</string>
     <string name="search_key">Search key</string>
+    <string name="column_2">Column 2</string>
+    <string name="column_3">Column 3</string>
+    <string name="column_4">Column 4</string>
 </resources>
