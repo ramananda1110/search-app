@@ -1,0 +1,25 @@
+ext.versionCode = 1
+ext.versionName = "1.0.0"
+
+private Integer generateVersionCode() {
+    return ext.versionCode
+}
+
+private String generateVersionName() {
+    return versionName
+}
+
+android {
+    defaultConfig {
+        versionCode generateVersionCode()
+        versionName generateVersionName()
+        buildConfigField "String", 'API_BASE_URL', API_BASE_URL
+        buildConfigField "String", 'APP_CLIENT_ID', API_CLIENT_ID
+
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "Search App-${defaultConfig.versionName}-${variant.buildType.name}.apk"
+        }
+    }
+}
